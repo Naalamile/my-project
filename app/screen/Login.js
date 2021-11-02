@@ -36,7 +36,7 @@ const Login = ({ navigation }) => {
           />
         </View>
         <View>
-          <Text style={{ fontSize: 30, textAlign: "center" }}>Welcome to</Text>
+          <Text style={{ fontSize: 30, textAlign: "center" }}> Heya Welcome to</Text>
           <Text style={{ fontWeight: "bold", fontSize: 30 }}>
           </Text>
         </View>
@@ -44,7 +44,7 @@ const Login = ({ navigation }) => {
           style={{
             justifyContent: "space-evenly",
             alignItems: "center",
-            flex: 0.3,
+            flex: 3,
           }}
         >
           <TouchableOpacity
@@ -58,17 +58,19 @@ const Login = ({ navigation }) => {
             <Ionicons name="logo-google" color="#DB4437" size={20} />
             <Text>Login with gmail</Text>
           </TouchableOpacity>
-          <Text style={{paddingTop:20}}></Text>
+          <Text style={{paddingTop:5,
+                        paddingBottom:10 
+                        }}>
+           </Text>
           <TouchableOpacity
             onPress={handleLogin}
             style={[
               styles.horizontalCenter,
               styles.buttons,
-              { backgroundColor: "#161414" },
+              { backgroundColor: "white" },
             ]}
           >
-            <Ionicons name="logo-apple" color="#fff" size={20} />
-            <Text style={{ color: "#fff" }}>Login with Apple</Text>
+            <Text style={{ color: "black" }}>Password</Text>
           </TouchableOpacity>
           
         </View>
@@ -82,7 +84,7 @@ const Login = ({ navigation }) => {
         >
           <Text style={{ color: "#a1a1a1" }}>Not a member?</Text>
           <TouchableOpacity>
-            <Text style={{ color: "orange", fontWeight: "bold" }}>
+            <Text style={{ color: "black", fontWeight: "bold" }}>
               {" "}
               Sign up
             </Text>

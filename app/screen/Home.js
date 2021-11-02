@@ -103,7 +103,7 @@ const Home = ({ navigation }) => {
                 { paddingHorizontal: 20, paddingVertical: 8 },
               ]}
             >
-              <Text style={{ color: "grey" }}>Roadbike</Text>
+              <Text style={{ color: "grey" }}>Summer clothes</Text>
             </View>
             <View
               style={[
@@ -111,7 +111,7 @@ const Home = ({ navigation }) => {
                 { paddingHorizontal: 20, paddingVertical: 8 },
               ]}
             >
-              <Text style={{ color: "grey" }}>Urban</Text>
+              <Text style={{ color: "grey" }}>Winter clothes</Text>
             </View>
             <View
               style={[
@@ -119,7 +119,7 @@ const Home = ({ navigation }) => {
                 { paddingHorizontal: 20, paddingVertical: 8 },
               ]}
             >
-              <Text style={{ color: "grey" }}>Moutains</Text>
+              <Text style={{ color: "grey" }}>Casual wears</Text>
             </View>
           </View>
         </View>
