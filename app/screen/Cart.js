@@ -30,7 +30,9 @@ const Cart = ({ navigation }) => {
             justifyContent: "space-between",
           }}
         >
+          <TouchableOpacity  onPress={() => navigation.goBack()} >
           <Ionicons name="arrow-back-outline" size={24} color="grey" />
+          </TouchableOpacity>
           <View style={{ flexDirection: "column", alignItems: "center" }}>
             <Text style={{ fontWeight: "bold", fontSize: 16 }}>Cart list</Text>
             <Text style={{ color: "grey" }}>(3 Items)</Text>

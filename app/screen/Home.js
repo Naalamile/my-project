@@ -38,7 +38,7 @@ const Home = ({ navigation }) => {
             <Ionicons name="menu-outline" size={24} color="black" />
           </View>
           <View>
-            <MaterialCommunityIcons name="motorbike" size={24} color="black" />
+            <MaterialCommunityIcons name="cart" size={24} color="black" />
           </View>
           <View
             style={{
@@ -61,11 +61,7 @@ const Home = ({ navigation }) => {
             width: "45%",
           }}
         >
-          <Text style={{ color: "gray" }}>The World's</Text>
-          <Text style={{ color: "orange", fontWeight: "bold", fontSize: 20 }}>
-            {" "}
-            Best Bike
-          </Text>
+          
         </View>
         <View>
           <Text
