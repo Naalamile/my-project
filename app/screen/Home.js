@@ -38,7 +38,7 @@ const Home = ({ navigation }) => {
             <Ionicons name="menu-outline" size={24} color="black" />
           </View>
           <View>
-            <MaterialCommunityIcons name="cart" size={24} color="black" />
+            <MaterialCommunityIcons name="cart" size={24} color="" />
           </View>
           <View
             style={{
@@ -63,6 +63,9 @@ const Home = ({ navigation }) => {
         >
           
         </View>
+        <TouchableOpacity  onPress={() => navigation.goBack()} >
+          <Ionicons name="arrow-back-outline" size={24} color="black" />
+          </TouchableOpacity>
         <View>
           <Text
             style={{
@@ -73,6 +76,7 @@ const Home = ({ navigation }) => {
               marginTop: 10,
             }}
           >
+        
             Categories
           </Text>
           <View
@@ -91,7 +95,7 @@ const Home = ({ navigation }) => {
                 { paddingHorizontal: 20, paddingVertical: 8 },
               ]}
             >
-              <Text style={{ color: "orange" }}>All</Text>
+              <Text style={{ color: "black" }}>All</Text>
             </View>
             <View
               style={[
@@ -141,7 +145,7 @@ const Home = ({ navigation }) => {
                 zIndex: 1,
               }}
             >
-              <Ionicons name="heart-outline" size={24} color="orange" />
+              <Ionicons name="heart-outline" size={24} color="red" />
             </View>
             <View
               style={{
@@ -158,7 +162,7 @@ const Home = ({ navigation }) => {
               />
             </View>
             <View style={{ flex: 1, marginLeft: "auto", marginRight: "auto" }}>
-              <Text style={{ color: "#a1a1a1" }}>Jeans</Text>
+              <Text style={{ color: "black" }}>Jeans</Text>
               <View
                 style={{
                   flexDirection: "row",
@@ -167,7 +171,7 @@ const Home = ({ navigation }) => {
                   width: "50%",
                 }}
               >
-                <Text style={{ color: "orange" }}>GH₵</Text>
+                <Text style={{ color: "black" }}>GH₵</Text>
                 <Text style={{ fontWeight: "bold" }}>100.00</Text>
               </View>
             </View>
@@ -203,7 +207,7 @@ const Home = ({ navigation }) => {
               />
             </View>
             <View style={{ flex: 1, marginLeft: "auto", marginRight: "auto" }}>
-              <Text style={{ color: "#a1a1a1" }}>Boyfriend Jeans</Text>
+              <Text style={{ color: "black" }}>Boyfriend Jeans</Text>
               <View
                 style={{
                   flexDirection: "row",
@@ -212,7 +216,7 @@ const Home = ({ navigation }) => {
                   width: "50%",
                 }}
               >
-                <Text style={{ color: "orange" }}>GH₵</Text>
+                <Text style={{ color: "black" }}>GH₵</Text>
                 <Text style={{ fontWeight: "bold" }}>170.00</Text>
               </View>
             </View>
@@ -248,7 +252,7 @@ const Home = ({ navigation }) => {
               />
             </View>
             <View style={{ flex: 1, marginLeft: "auto", marginRight: "auto" }}>
-              <Text style={{ color: "#a1a1a1" }}>Maxi dress</Text>
+              <Text style={{ color: "black" }}>Maxi dress</Text>
               <View
                 style={{
                   flexDirection: "row",
@@ -257,8 +261,53 @@ const Home = ({ navigation }) => {
                   width: "50%",
                 }}
               >
-                <Text style={{ color: "orange" }}>GH₵</Text>
+                <Text style={{ color: "black" }}>GH₵</Text>
                 <Text style={{ fontWeight: "bold" }}>200.00</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={handleSubmit}
+            style={[styles.bgcontainer, styles.productItem]}
+          >
+            <View
+              style={{
+                backgroundColor: "#f8f8f8a7",
+                width: 25,
+                position: "absolute",
+                top: "2%",
+                right: "8%",
+                zIndex: 1,
+              }}
+            >
+            <Ionicons name="heart-outline" size={24} color="grey" />
+            </View>
+            <View
+              style={{
+                flexBasis: "75%",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Image
+                style={{ width: 100, height: 120 }}
+                source={{
+                  uri: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNoaXJ0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                }}
+              />
+            </View>
+            <View style={{ flex: 1, marginLeft: "auto", marginRight: "auto" }}>
+              <Text style={{ color: "black" }}>Sweater</Text>
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  width: "50%",
+                }}
+              >
+                <Text style={{ color: "black" }}>GH₵</Text>
+                <Text style={{ fontWeight: "bold" }}>70.00</Text>
               </View>
             </View>
           </TouchableOpacity>
@@ -293,7 +342,7 @@ const Home = ({ navigation }) => {
               />
             </View>
             <View style={{ flex: 1, marginLeft: "auto", marginRight: "auto" }}>
-              <Text style={{ color: "#a1a1a1" }}>Hoodie</Text>
+              <Text style={{ color: "black" }}>Hoodie</Text>
               <View
                 style={{
                   flexDirection: "row",
@@ -302,7 +351,7 @@ const Home = ({ navigation }) => {
                   width: "50%",
                 }}
               >
-                <Text style={{ color: "orange" }}>GH₵</Text>
+                <Text style={{ color: "black" }}>GH₵</Text>
                 <Text style={{ fontWeight: "bold" }}>150.00</Text>
               </View>
             </View>

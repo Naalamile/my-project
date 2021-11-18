@@ -7,6 +7,7 @@ import {
   Image,
   TouchableOpacity,
   ImageBackground,
+  TextInput,
 } from "react-native";
 
 //imports of third party packages
@@ -27,8 +28,8 @@ const Login = ({ navigation }) => {
 
         
         <View>
-          <Text style={{ fontSize: 30, textAlign: "center", fontWeight: "bold", fontSize: 30 , marginBottom:25, color:"black" }}> Welcome to Gigi's Clothing</Text>
-          
+          <Text style={{ fontSize: 30, textAlign: "center", fontWeight: "bold", fontSize: 30 , marginBottom:25, color:"black" }}>
+             Welcome to Gigi's Clothing</Text>
         </View>
         <View
           style={{
@@ -47,6 +48,9 @@ const Login = ({ navigation }) => {
           >
             <Ionicons name="logo-google" color="#DB4437" size={20} />
             <Text>Login with gmail</Text>
+            <Text
+            style={styles.input}
+            /> 
           </TouchableOpacity>
           <Text style={{paddingTop:5,
                         paddingBottom:15 

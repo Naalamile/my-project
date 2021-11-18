@@ -31,7 +31,7 @@ const Cart = ({ navigation }) => {
           }}
         >
           <TouchableOpacity  onPress={() => navigation.goBack()} >
-          <Ionicons name="arrow-back-outline" size={24} color="grey" />
+          <Ionicons name="arrow-back-outline" size={24} color="black" />
           </TouchableOpacity>
           <View style={{ flexDirection: "column", alignItems: "center" }}>
             <Text style={{ fontWeight: "bold", fontSize: 16 }}>Cart list</Text>
@@ -57,7 +57,7 @@ const Cart = ({ navigation }) => {
               }}
             >
               <Image
-                style={{ width: "90%", height: 50, borderRadius: 10 }}
+                style={{ width: "100%", height: 150, borderRadius: 10 }}
                 source={{
                   uri: "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdGhpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
                 }}
@@ -69,9 +69,9 @@ const Cart = ({ navigation }) => {
                 width: "100%",
               }}
             >
-              <View style={{ flexBasis: "50%" }}>
+              <View style={{ flexBasis: "40%" }}>
                 <Text style={{ fontSize: 18, fontWeight: "bold" }}>
-                  .......
+                    jeans
                 </Text>
                 <Text style={{ fontSize: 13, color: "#a1a1a1" }}>
                   ..............
@@ -120,7 +120,7 @@ const Cart = ({ navigation }) => {
                     style={styles.iconBg}
                     name="plus"
                     size={24}
-                    color="orange"
+                    color="pink"
                   />
                 </View>
               </View>
@@ -135,13 +135,13 @@ const Cart = ({ navigation }) => {
         <View style={{ flex: 1, alignItems: "center" }}>
           <TouchableOpacity
             style={{
-              backgroundColor: "darkorange",
+              backgroundColor: "white",
               paddingHorizontal: 45,
               borderRadius: 15,
               paddingVertical: 20,
             }}
           >
-            <Text style={{ color: "#fff", fontSize: 16 }}>
+            <Text style={{ color: "black", fontSize: 16 }}>
               Proceed to Checkout
             </Text>
           </TouchableOpacity>
