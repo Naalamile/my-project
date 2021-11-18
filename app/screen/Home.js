@@ -20,6 +20,7 @@ const Home = ({ navigation }) => {
     // setActiveBtn(place);
     navigation.navigate("cart");
   };
+  
 
   return (
     <SafeAreaView style={styles.container}>
@@ -38,7 +39,7 @@ const Home = ({ navigation }) => {
             <Ionicons name="menu-outline" size={24} color="black" />
           </View>
           <View>
-            <MaterialCommunityIcons name="cart" size={24} color="" />
+            <MaterialCommunityIcons name="cart" size={24} color="black" />
           </View>
           <View
             style={{
@@ -92,7 +93,7 @@ const Home = ({ navigation }) => {
             <View
               style={[
                 styles.bgcontainer,
-                { paddingHorizontal: 20, paddingVertical: 8 },
+                { paddingHorizontal: 2, paddingVertical: 5 },
               ]}
             >
               <Text style={{ color: "black" }}>All</Text>
@@ -100,7 +101,7 @@ const Home = ({ navigation }) => {
             <View
               style={[
                 styles.bgcontainer,
-                { paddingHorizontal: 20, paddingVertical: 8 },
+                { paddingHorizontal: 2, paddingVertical: 5 },
               ]}
             >
               <Text style={{ color: "grey" }}>Summer clothes</Text>
@@ -108,7 +109,7 @@ const Home = ({ navigation }) => {
             <View
               style={[
                 styles.bgcontainer,
-                { paddingHorizontal: 20, paddingVertical: 8 },
+                { paddingHorizontal: 2, paddingVertical: 5 },
               ]}
             >
               <Text style={{ color: "grey" }}>Winter clothes</Text>
@@ -116,7 +117,7 @@ const Home = ({ navigation }) => {
             <View
               style={[
                 styles.bgcontainer,
-                { paddingHorizontal: 20, paddingVertical: 8 },
+                { paddingHorizontal: 2, paddingVertical: 5 },
               ]}
             >
               <Text style={{ color: "grey" }}>Casual wears</Text>

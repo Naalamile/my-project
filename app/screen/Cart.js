@@ -1,4 +1,4 @@
-import React from "react";
+  import React,{ useState} from "react";
 import {
   StyleSheet,
   Text,
@@ -16,7 +16,7 @@ const Cart = ({ navigation }) => {
   const handleGoBack = () => {
     navigation.goback();
   };
-
+  const [count, setCount] = useState(1);
   return (
     <SafeAreaView style={styles.container}>
       <View style={{ flexBasis: "90%", marginHorizontal: 10 }}>
@@ -74,7 +74,7 @@ const Cart = ({ navigation }) => {
                     jeans
                 </Text>
                 <Text style={{ fontSize: 13, color: "#a1a1a1" }}>
-                  ..............
+                  
                 </Text>
                 <View
                   style={{
@@ -94,13 +94,13 @@ const Cart = ({ navigation }) => {
                 >
                   <MaterialCommunityIcons
                     style={{
-                      borderRadius: 50,
+                      borderRadius: 40,
                       borderWidth: 1,
                       borderColor: "grey",
                     }}
                     name="delete-outline"
                     size={24}
-                    color="orange"
+                    color="black"
                   />
                 </View>
                 <View
@@ -120,7 +120,7 @@ const Cart = ({ navigation }) => {
                     style={styles.iconBg}
                     name="plus"
                     size={24}
-                    color="pink"
+                    color="white"
                   />
                 </View>
               </View>
